@@ -1,0 +1,13 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <h1>Добро пожаловать на главную!</h1>
+    <p class="lead">Это главная страница Flask-приложения с использованием Bootstrap.</p>
+    <div class="alert alert-info">
+        Это пример контента, который наследуется от базового шаблона.
+    </div>
+    <a href="{{ url_for('about') }}" class="btn btn-primary">Перейти к "О нас"</a>
+{% endblock %}
