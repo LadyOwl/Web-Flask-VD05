@@ -1,0 +1,16 @@
+<!-- templates/about.html -->
+{% extends "base.html" %}
+
+{% block title %}О нас{% endblock %}
+
+{% block content %}
+    <h1>О нас</h1>
+    <p class="lead">Мы — команда разработчиков, создающих веб-приложения на Flask.</p>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Наша миссия</h5>
+            <p class="card-text">Обучать и помогать новичкам в веб-разработке с помощью простых и понятных примеров.</p>
+        </div>
+    </div>
+    <a href="{{ url_for('home') }}" class="btn btn-secondary mt-3">На главную</a>
+{% endblock %}
